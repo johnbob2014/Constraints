@@ -1,16 +1,48 @@
-//
-//  main.m
-//  Constraints-C05
-//
-//  Created by BobZhang on 16/6/8.
-//  Copyright © 2016年 BobZhang. All rights reserved.
-//
+/*
+ 
+ Erica Sadun, http://ericasadun.com
+ iOS 7 Cookbook
+ Use at your own risk. Do no harm.
+ 
+ */
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+@import UIKit;
+@import QuartzCore;
+#import "Utility.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+#import "TestBedViewController.h"
+
+#pragma mark - Application Setup
+
+@interface TestBedAppDelegate : NSObject <UIApplicationDelegate>
+@property (nonatomic, strong) UIWindow *window;
+@end
+
+@implementation TestBedAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window.tintColor = COOKBOOK_PURPLE_COLOR;
+    TBVC *tbvc = [[TBVC alloc] init];
+    tbvc.edgesForExtendedLayout = UIRectEdgeNone;
+    tbvc.view.backgroundColor=[UIColor whiteColor];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tbvc];
+    _window.rootViewController = nav;
+    [_window makeKeyAndVisible];
+    return YES;
+}
+
+@end
+
+
+#pragma mark - main
+
+int main(int argc, char *argv[])
+{
+    @autoreleasepool
+    {
+        int retVal = UIApplicationMain(argc, argv, nil, @"TestBedAppDelegate");
+        return retVal;
     }
 }

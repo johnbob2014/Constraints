@@ -7,25 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B4093C51D07C3CC000FEE3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4093C41D07C3CC000FEE3F /* main.m */; };
-		4B4093C81D07C3CC000FEE3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4093C71D07C3CC000FEE3F /* AppDelegate.m */; };
-		4B4093CB1D07C3CC000FEE3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4093CA1D07C3CC000FEE3F /* ViewController.m */; };
-		4B4093CE1D07C3CC000FEE3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4093CC1D07C3CC000FEE3F /* Main.storyboard */; };
 		4B4093D01D07C3CC000FEE3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4093CF1D07C3CC000FEE3F /* Assets.xcassets */; };
 		4B4093D31D07C3CC000FEE3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4093D11D07C3CC000FEE3F /* LaunchScreen.storyboard */; };
+		4B4093DE1D07C422000FEE3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4093DA1D07C422000FEE3F /* main.m */; };
+		4B4093DF1D07C422000FEE3F /* TestBedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4093DC1D07C422000FEE3F /* TestBedViewController.m */; };
+		4B4093E21D07C525000FEE3F /* UIView+ConstraintHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4093E11D07C525000FEE3F /* UIView+ConstraintHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B4093C01D07C3CB000FEE3F /* Constraints-C05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Constraints-C05.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B4093C41D07C3CC000FEE3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4B4093C61D07C3CC000FEE3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4B4093C71D07C3CC000FEE3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4B4093C91D07C3CC000FEE3F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4B4093CA1D07C3CC000FEE3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4B4093CD1D07C3CC000FEE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B4093CF1D07C3CC000FEE3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B4093D21D07C3CC000FEE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B4093D41D07C3CC000FEE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B4093DA1D07C422000FEE3F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B4093DB1D07C422000FEE3F /* TestBedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBedViewController.h; sourceTree = "<group>"; };
+		4B4093DC1D07C422000FEE3F /* TestBedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBedViewController.m; sourceTree = "<group>"; };
+		4B4093DD1D07C422000FEE3F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		4B4093E01D07C525000FEE3F /* UIView+ConstraintHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ConstraintHelper.h"; path = "UIView+ConstraintHelper/UIView+ConstraintHelper.h"; sourceTree = "<group>"; };
+		4B4093E11D07C525000FEE3F /* UIView+ConstraintHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ConstraintHelper.m"; path = "UIView+ConstraintHelper/UIView+ConstraintHelper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,25 +57,25 @@
 		4B4093C21D07C3CC000FEE3F /* Constraints-C05 */ = {
 			isa = PBXGroup;
 			children = (
-				4B4093C61D07C3CC000FEE3F /* AppDelegate.h */,
-				4B4093C71D07C3CC000FEE3F /* AppDelegate.m */,
-				4B4093C91D07C3CC000FEE3F /* ViewController.h */,
-				4B4093CA1D07C3CC000FEE3F /* ViewController.m */,
-				4B4093CC1D07C3CC000FEE3F /* Main.storyboard */,
+				4B4093E31D07C52B000FEE3F /* UIView+ConstraintHelper */,
+				4B4093DB1D07C422000FEE3F /* TestBedViewController.h */,
+				4B4093DC1D07C422000FEE3F /* TestBedViewController.m */,
+				4B4093DD1D07C422000FEE3F /* Utility.h */,
+				4B4093DA1D07C422000FEE3F /* main.m */,
 				4B4093CF1D07C3CC000FEE3F /* Assets.xcassets */,
 				4B4093D11D07C3CC000FEE3F /* LaunchScreen.storyboard */,
 				4B4093D41D07C3CC000FEE3F /* Info.plist */,
-				4B4093C31D07C3CC000FEE3F /* Supporting Files */,
 			);
 			path = "Constraints-C05";
 			sourceTree = "<group>";
 		};
-		4B4093C31D07C3CC000FEE3F /* Supporting Files */ = {
+		4B4093E31D07C52B000FEE3F /* UIView+ConstraintHelper */ = {
 			isa = PBXGroup;
 			children = (
-				4B4093C41D07C3CC000FEE3F /* main.m */,
+				4B4093E01D07C525000FEE3F /* UIView+ConstraintHelper.h */,
+				4B4093E11D07C525000FEE3F /* UIView+ConstraintHelper.m */,
 			);
-			name = "Supporting Files";
+			name = "UIView+ConstraintHelper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +137,6 @@
 			files = (
 				4B4093D31D07C3CC000FEE3F /* LaunchScreen.storyboard in Resources */,
 				4B4093D01D07C3CC000FEE3F /* Assets.xcassets in Resources */,
-				4B4093CE1D07C3CC000FEE3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +147,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B4093CB1D07C3CC000FEE3F /* ViewController.m in Sources */,
-				4B4093C81D07C3CC000FEE3F /* AppDelegate.m in Sources */,
-				4B4093C51D07C3CC000FEE3F /* main.m in Sources */,
+				4B4093DF1D07C422000FEE3F /* TestBedViewController.m in Sources */,
+				4B4093E21D07C525000FEE3F /* UIView+ConstraintHelper.m in Sources */,
+				4B4093DE1D07C422000FEE3F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B4093CC1D07C3CC000FEE3F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B4093CD1D07C3CC000FEE3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B4093D11D07C3CC000FEE3F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
