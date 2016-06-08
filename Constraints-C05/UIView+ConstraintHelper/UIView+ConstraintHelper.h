@@ -18,7 +18,7 @@
 - (BOOL)constraint:(NSLayoutConstraint *)constraint1 matches:(NSLayoutConstraint *)constraint2;
 
 /**
- 返回与指定约束相匹配的约束 - ConstraintHelper
+ 返回与指定约束相匹配的 第一个 约束 - ConstraintHelper
  */
 - (NSLayoutConstraint *)constraintMatchingConstraint:(NSLayoutConstraint *)aConstraint;
 
@@ -45,41 +45,41 @@
 - (void)constrainWithinSuperviewBounds;
 
 /**
- 
+ 添加一个子视图，并将此子视图约束在本视图的bounds范围内
  */
 - (void)addSubviewAndConstrainToBounds:(UIView *)view;
 
 // Size & Position (Recipe 5-2)
 
 /**
- 
+ 生成并返回本视图 尺寸 约束
  */
-- (NSArray *)sizeConstraints:(CGSize)aSize;
+- (NSArray *)sizeConstraints:(CGSize)aSize atPriority:(float)aPriority;
 
 /**
- 
+ 生成并返回本视图 原点 约束
  */
-- (NSArray *)positionConstraints: (CGPoint)aPoint;
+- (NSArray *)positionConstraints: (CGPoint)aPoint atPriority:(float)aPriority;
 
 /**
- 
+ 设置尺寸约束
  */
 - (void)constrainSize:(CGSize)aSize;
 
 /**
- 
+ 设置原点约束
  */
 - (void)constrainPosition: (CGPoint)aPoint; // w/in superview bounds
 
 // Centering (Recipe 5-3)
 
 /**
- 返回水平居中约束
+ 生成并返回水平居中约束
  */
 - (NSLayoutConstraint *)horizontalCenteringConstraint;
 
 /**
- 返回垂直居中约束
+ 生成并返回垂直居中约束
  */
 - (NSLayoutConstraint *)verticalCenteringConstraint;
 
@@ -101,12 +101,12 @@
 // Aspect Ratios (Recipe 5-4)
 
 /**
- 
+ 生成并返回指定宽高比的约束
  */
 - (NSLayoutConstraint *)aspectConstraint:(CGFloat)aspectRatio;
 
 /**
- 
+ 设置指定宽高比的约束
  */
 - (void)constrainAspectRatio:(CGFloat)aspectRatio;
 
